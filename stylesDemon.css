@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{/*Reset ค่า margin padding ให้เป็น 0*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*ไม่ต้องคำนวนรวมกับขนาดกล่องกรณีต้องค่า margin padding*/
+}
+
+
+
+:root {
+  --nav-color: rgba(50, 50, 50, 1);
+  --nav-txt-white: rgba(173, 173, 173, 1);
+  --Logo-red:#dd3030;
+  --bg-dark:rgba(30, 27, 27, 1);
+  --Logo-dark:#2b2a2a;
+
+}
+
+/*Navbar Start*/
+.material-symbols-outlined {
+    color: nav-txt-white;
+    font-size: 30px;
+    display: none;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+/*ปรับขนาดฟอนต์เมื่อหน้าจอเล็กลง*/
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400px;
+    font-style: normal;     
+    background-color: var(--bg-dark);
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+
+.flex-nav {
+  display: flex;
+  /*flex-direction: row;*/ /*เรียงเป็นแถว*/
+  /*flex-wrap: nowrap;*//*ถ้าที่ไม่พอให้เบียดกัน*/
+  /*ทำ2บรรทัดบนให้เป็นคำสั่งเดียว (ย่อคำสั่ง)*/
+  flex-flow: row nowrap;
+  box-sizing: border-box;
+  /*justify-content: center;*/ /*ใช้จัดตำแหน่ง*/
+  /*่justify-conten: space-evenly; ใช้กำหนดพื้นที่รอบๆ */
+  background-color: var(--nav-color);
+  align-items: stretch; /*ทุก item จะสูงเท่ากับคอนเทนเนอร์*/
+
+}
+/*แบ่งสัดส่วน nav โดยอ้างอิงคลาสแม่ลูก*/
+/*.flex-nav > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  
+}*/
+/*แบ่งสัดส่วน nav แบบตรงๆ*/
+.item{
+  /*background-color : #f1f1f1;*/
+  display: block;
+  margin: 5px;
+  padding: 2.5px;
+  align-items: center; /*จำตำแหน่งให้ไอเท็มที่อยู่ด้านใน flex*/
+  position: relative;
+  display: inline-flex; /*ให้ DemonLogo อยู่ในแถวเดียวกันเสมอ*/
+  text-align: center;
+  margin-right: 30px;
+}
+.icon{
+  color: var(--nav-txt-white);
+ /* order: -1;*//*เรียงลำดับ 1 -1  หรือ 0 ฯลฯ */
+  display: flex;
+}
+.Logo{
+  display: flex;
+  flex-grow: 1;
+  white-space: nowrap; /* ป้องกันข้อความแตกบรรทัด */
+
+}
+.Menubar{
+  flex-grow: 2; /*ขยายเบียดคนอื่น*/
+  margin-left: auto;
+
+}
+
+
+/*ปรับขนาดฟอนต์เมื่อหน้าจอเล็กลง*/
+
+/*Logo*/
+
+.DemonLogo {
+    font-family: "Kanit", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--Logo-dark);
+    text-shadow: 
+      -1px -1px 0 whitesmoke,  
+       1px -1px 0 whitesmoke,  
+      -1px  1px 0 whitesmoke,  
+       1px  1px 0 whitesmoke; /* ซ้อนเงาเพื่อสร้าง stroke */
+       white-space: nowrap; /* ป้องกันข้อความขึ้นบรรทัดใหม่ ใช้อันไหนก็ได้ */
+       display: inline-flex; /*ให้ DemonLogo อยู่ในแถวเดียวกันเสมอ*/
+    text-align: center;
+    
+  }
+.redLogo{
+    color: #dd3030;
+}
+
+nav ul{
+  display: flex;
+  gap: 20px;
+}
+nav ul li{
+  list-style-type: none;
+}
+nav ul li a{
+  text-decoration: none;
+  color: var(--nav-txt-white);
+}
+.flex-nav li:hover{
+  text-decoration: underline; /* เอฟเฟกต์เมื่อวางเมาส์ */
+
+}
+
+
+/*Navbar End*/
+
+
+
+/*Grid Body Start*/
+.grid{
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows: auto 1fr auto;  /*ขนาดตามเนื้อหาเต็มพื้นที่/ขนาดตามเนื้อหา*/
+  grid-template-areas:
+  'header'
+  'body' /**/
+  'footer';
+  height: 100vh;
+}
+.page-header{
+  grid-area: header;
+ height: 400px;
+}
+.page-body{
+  grid-area:body;
+  background:rgb(34, 32, 32)
+}
+.grid-footer{
+  grid-area: footer;
+  background: #dd3030;
+}
+.content{
+ /* background-color: gold;*/
+  border: 2px solid rgb(255, 0, 0);
+  box-sizing: border-box;
+  padding: 0px;
+  color: aliceblue;
+}
+
+/*Grid Body End*/
+
+
+
+
+/*Grid card Start*/
+
+.grid-card{/*จำนวนคอมลัมน์ที่จะแสดงในหน้าจอ*/
+  display: grid;
+  /*border: 2px solid rgb(255, 0, 0);*/
+  grid-template-columns: 1fr 1fr 1fr;/*กำหนดขนาดคอลัมฯ์*/
+  column-gap: 10px; /*พื้นที่ว่างแนวตั้ง*/
+  row-gap: 10px;
+  justify-items: center;
+  align-items: center; /*กำหนดตำแหน่งในไอเท็ม*/
+  padding: 50px;
+}
+
+.content-card{ /*card item*/
+  background-color: rgba(71, 40, 40, 0.463);
+ /*border: 2px solid rgb(240, 0, 0); *//*เส้นขอบไอไว้ดูเป็นไกด์*/
+  box-sizing: border-box;
+  justify-content: center;
+  width: 360px;
+  height: 500px ;
+  margin: 20px;
+  overflow: hidden; 
+  word-wrap: break-word; /* บังคับให้ขึ้นบรรทัดใหม่ */
+  /*overflow-wrap: hidden;*/
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ card โดยระบุค่า offset, blur และสีเงา */
+}
+
+
+
+.grid-card img{ /*รูปภาพ card*/
+ /* max-width: 100%; *//* ขนาดภาพจะไม่ใหญ่เกินขนาดคอน*/
+ /* width: 100%;
+  height: 250px;
+  display: block;
+  border-radius: 30px;
+  object-fit: cover;*/
+  
+  border-radius: 30px;
+  width: 100%; /* หรือกำหนดขนาดตามที่ต้องการ เช่น 300px */
+  height: 400px; /* ปรับความสูงตามต้องการ */
+  overflow: hidden; /* ครอบภาพให้พอดีกับคอนเทนเนอร์ */
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
+/*  width: 415px;*/ /* หรือระบุขนาดที่แน่นอน เช่น 300px */
+  /*height: 300px; *//* ขนาดความสูงที่ต้องการ */
+ /* object-fit: cover;*/ /* ครอบรูปโดยยังคงสัดส่วน */
+}
+
+
+.content-data{
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  font-family: "Kanit", sans-serif;
+  font-size: 14px;
+  white-space: nowrap; /* ป้องกันข้อความจากการแตกบรรทัด */
+  overflow: hidden;
+  text-overflow: ellipsis; /* เพิ่ม ... ในข้อความที่ถูกตัด */
+
+  
+
+}
+
+.name-demon{
+  background-color:var(--Logo-red) ;
+  width: 80%;
+  height: 100px;
+  border-top-right-radius: 25px;
+  align-items: center;
+  padding-top: 7px;
+  padding-left: 20px;
+  font-family: "Kanit", sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*Start Branner*/
+
+

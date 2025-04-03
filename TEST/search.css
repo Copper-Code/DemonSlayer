@@ -1,0 +1,35 @@
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0px -10px;
+  }
+  
+  .item {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+  }
+  .leftbar{
+    width: 300px;
+  }
+  /*
+  .item-4 {
+    width: 33.33%;
+  }
+  .item-8{
+    width: 66.66%;
+  }*/
+  .main{
+    flex-grow: 1;
+  }
+  
+  .content {
+    background-color: gold;
+    border: 2px solid black;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+  }

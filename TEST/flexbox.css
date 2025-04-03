@@ -1,0 +1,31 @@
+.flexbox{
+    display: flex; /* ใช้ Flexbox layout ทำให้สามารถจัดเรียงลูกองค์ประกอบภายใน flex container ได้แบบยืดหยุ่น เช่น แถวหรือคอลัมน์ */
+    box-sizing: border-box; /* รวม padding และ border เข้าไปในขนาดความกว้างและความสูงขององค์ประกอบ */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex;
+}
+
+.item{
+    display: block; /* กำหนดให้องค์ประกอบนี้แสดงเป็นบล็อก ซึ่งจะขยายเต็มความกว้างของ container ที่อยู่ใน */
+    box-sizing: border-box; /* ใช้ border-box เพื่อตรวจสอบให้ padding และ border รวมอยู่ในขนาด */
+
+    width: 33.33%; /* กำหนดความกว้างขององค์ประกอบเป็นหนึ่งในสาม (33.33%) ของ container */
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden ; /* ซ่อนข้อความที่เกินขอบ */
+      text-align: center; /* จัดตำแหน่งข้อความให้ตรงกลาง */
+      white-space: nowrap; /* ไม่ให้ข้อความขึ้นบรรทัดใหม่ */
+      text-overflow: ellipsis; /* แสดง "..." เมื่อข้อความยาวเกินขอบ */
+    
+
+}
+
+
+.content{
+    height: 100px;
+    background-color: red; /* กำหนดพื้นหลังขององค์ประกอบเป็นสีแดง */
+    border: 2px solid black; /* สร้างขอบขององค์ประกอบด้วยสีดำ หนา 2px */
+    padding: 16px; /* เพิ่มพื้นที่ด้านใน (ระหว่างขอบและเนื้อหา) ขององค์ประกอบ */
+}
