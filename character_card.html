@@ -24,15 +24,11 @@
         <div id ="branner"></div>
         <script>
                 fetch("../branner.html")
-                    .then(response => response.text())
+                .then(response => response.text())
                     .then(data => {
                     document.getElementById("branner").innerHTML = data;
-                    setTimeout(() => {
-            showSlides(1); // เรียกฟังก์ชันแสดงสไลด์หลังจากโหลดเสร็จ
-        }, 100);
-    })
-    .catch(err => console.error("Error loading branner:", err));
-
+                    }).catch(err=>
+                    console.error("Error loading Navbar:", err));
 
     </script>
         </header>
