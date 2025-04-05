@@ -11,7 +11,7 @@
   --nav-color: rgba(50, 50, 50, 1);
   --nav-txt-white: rgba(173, 173, 173, 1);
   --Logo-red:#dd3030;
-  --bg-dark:rgba(30, 27, 27, 1);
+  --bg-dark:rgba(30, 27, 27, 1);;
   --Logo-dark:#2b2a2a;
 
 }
@@ -40,7 +40,7 @@ body{
     font-family: "Kanit", sans-serif;
     font-weight: 400px;
     font-style: normal;     
-    background-color: var(--bg-dark);
+   /* background-color: var(--bg-dark);*/
 }
 html,body{
 height: 100%;
@@ -170,6 +170,7 @@ nav ul li a{
 
 /*Grid Body Start*/
 .grid{
+  
   display: grid;
   grid-template-columns:1fr;
   grid-template-rows: auto 1fr auto;  /*ขนาดตามเนื้อหาเต็มพื้นที่/ขนาดตามเนื้อหา*/
@@ -181,7 +182,8 @@ nav ul li a{
 }
 .page-header{
   grid-area: header;
-  height:400px
+  height:400px;
+
 }
 .page-body{
   grid-area:body;
@@ -189,7 +191,7 @@ nav ul li a{
 }
 .grid-footer{
   grid-area: footer;
-  background: #dd3030;
+
 }
 .content{
  /* background-color: gold;*/
@@ -208,6 +210,7 @@ nav ul li a{
 
 .grid-card{/*จำนวนคอมลัมน์ที่จะแสดงในหน้าจอ*/
   display: grid;
+  
   /*border: 2px solid rgb(255, 0, 0);*/
   grid-template-columns: 1fr 1fr 1fr;/*กำหนดขนาดคอลัมฯ์*/
   column-gap: 10px; /*พื้นที่ว่างแนวตั้ง*/
@@ -219,6 +222,7 @@ nav ul li a{
 
 .content-card{ /*card item*/
   background-color: rgba(71, 40, 40, 0.463);
+  
  /*border: 2px solid rgb(240, 0, 0); *//*เส้นขอบไอไว้ดูเป็นไกด์*/
   box-sizing: border-box;
   justify-content: center;
@@ -315,7 +319,7 @@ body{
   font-family: "Kanit", sans-serif;
   font-weight: 400px;
   font-style: normal;     
-  background-color: var(--bg-dark);
+  /*background-color: var(--bg-dark);*/
 }
 html,body{
 height: 100%;
@@ -599,7 +603,7 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
     font-family: "Kanit", sans-serif;
     font-weight: 400px;
     font-style: normal;     
-    background-color: var(--bg-dark);
+   /* background-color: var(--bg-dark);*/
   }
   html,body{
   height: 100%;
@@ -878,7 +882,7 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
     font-family: "Kanit", sans-serif;
     font-weight: 400px;
     font-style: normal;     
-    background-color: var(--bg-dark);
+   /* background-color: var(--bg-dark);*/
   }
   html,body{
   height: 100%;
@@ -1001,6 +1005,7 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
     margin: auto; 
     overflow: hidden; /* ครอบภาพให้พอดีกับคอนเทนเนอร์ */
     object-fit: fill;
+    
   
       }
       .position-text{
@@ -1031,11 +1036,14 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
   .page-header{
   grid-area: header;
   height: 300px;
-  margin-bottom:clamp(15px, 2vw, 20px);
+ 
+  
   }
   .page-body{
   grid-area:body;
-  background:rgb(34, 32, 32)
+  background:rgb(34, 32, 32);
+  
+  
   }
   .grid-footer{
   grid-area: footer;
