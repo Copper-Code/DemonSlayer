@@ -22,7 +22,7 @@
 /*Navbar Start*/
 
 /*ขนาดจอ >= 751 */
-@media (min-width: 751px) {
+@media (min-width: 1000px) {
 
 .material-symbols-outlined {
     color: nav-txt-white;
@@ -296,7 +296,7 @@ nav ul li a{
 
 /********จอกว้าง ตั้งแต่ 481 - 1023****************************************************************/
 /*Navbar Start*/
-@media (min-width:601px) and (max-width: 750px) {
+@media (min-width:601px) and (max-width: 999px) {
 
 .material-symbols-outlined {
   color: nav-txt-white;
@@ -329,6 +329,7 @@ display: flex;
 /*ทำ2บรรทัดบนให้เป็นคำสั่งเดียว (ย่อคำสั่ง)*/
 flex-flow: row nowrap;
 box-sizing: border-box;
+justify-content: space-between;
 /*justify-content: center;*/ /*ใช้จัดตำแหน่ง*/
 /*่justify-conten: space-evenly; ใช้กำหนดพื้นที่รอบๆ */
 background-color: var(--nav-color);
@@ -353,8 +354,8 @@ align-items: center; /*จำตำแหน่งให้ไอเท็มท
 position: relative;
 display: inline-flex; /*ให้ DemonLogo อยู่ในแถวเดียวกันเสมอ*/
 text-align: center;
-margin-right: clamp(30px,5vw,150px); /*margin-right ไม่ต่ำกว่า 10px พยายามตั้งอยู่ที่ 30% ของหน้าจอ w,jgdbo 30px*/
 
+margin-right: clamp(30px,5vw,150px); /*margin-right ไม่ต่ำกว่า 10px พยายามตั้งอยู่ที่ 30% ของหน้าจอ w,jgdbo 30px*
 }
 .icon{
 color: var(--nav-txt-white);
@@ -414,7 +415,7 @@ font-size: clamp(12px, 1.5vw, 18px);
 text-decoration: underline; /* เอฟเฟกต์เมื่อวางเมาส์ */
 
 }
-
+   
 
 /*Navbar End*/
 
@@ -427,6 +428,7 @@ text-decoration: underline; /* เอฟเฟกต์เมื่อวาง�
         object-fit: fill;
         overflow: hidden;
         max-width: auto;*/
+  
   height: 280px;
   position: relative;
   margin: auto; 
@@ -463,6 +465,7 @@ height: 100vh;
 .page-header{
 grid-area: header;
 height: 300px ;
+margin-bottom:clamp(15px, 2vw, 20px);
 }
 .page-body{
 grid-area:body;
@@ -577,7 +580,7 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
 
 
 /*Navbar Start*/
-@media only screen and (max-width = 600px) {
+@media only screen and (max-width = 1000px) {
 
   .material-symbols-outlined {
     color: nav-txt-white;
@@ -708,6 +711,7 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
           object-fit: fill;
           overflow: hidden;
           max-width: auto;*/
+    margin-bottom: 20px;
     max-height: 280px;
     position: relative;
     margin: auto; 
@@ -888,6 +892,7 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
   /*ทำ2บรรทัดบนให้เป็นคำสั่งเดียว (ย่อคำสั่ง)*/
   flex-flow: row nowrap;
   box-sizing: border-box;
+  justify-content: space-between;
   /*justify-content: center;*/ /*ใช้จัดตำแหน่ง*/
   /*่justify-conten: space-evenly; ใช้กำหนดพื้นที่รอบๆ */
   background-color: var(--nav-color);
@@ -906,13 +911,14 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
   .item{
   /*background-color : #f1f1f1;*/
   display: block;
-  margin: 2px;
-  padding: 2.5px;
+  margin:  clamp(0.1px, 2vw, 1px);
+ 
+  padding: clamp(0.5px, 2vw, 2.5px);
   align-items: center; /*จำตำแหน่งให้ไอเท็มที่อยู่ด้านใน flex*/
   position: relative;
   display: inline-flex; /*ให้ DemonLogo อยู่ในแถวเดียวกันเสมอ*/
   text-align: center;
-  margin-right: 30px;
+  margin-right: clamp(10px,10vw, 60px);;
   
   }
   .icon{
@@ -957,17 +963,21 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
     color: #dd3030;
   }
   
-  nav ul{
+  nav ul{ 
   display: flex;
-  gap: 10px;
+  gap: clamp(10px, 2vw, 20px); 
+
   }
   nav ul li{
   list-style-type: none;
   }
+
+  /*ตั้งค่าเมนูใน navbar*/
   nav ul li a{
   text-decoration: none;
   color: var(--nav-txt-white);
-  font-size: 12px;
+  white-space: nowrap;
+  font-size: clamp(2.5px, 2vw, 16px);
   }
   .flex-nav li:hover{
   text-decoration: underline; /* เอฟเฟกต์เมื่อวางเมาส์ */
@@ -1021,6 +1031,7 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
   .page-header{
   grid-area: header;
   height: 300px;
+  margin-bottom:clamp(15px, 2vw, 20px);
   }
   .page-body{
   grid-area:body;
