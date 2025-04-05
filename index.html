@@ -29,13 +29,14 @@
                     .then(data => {
                     document.getElementById("branner").innerHTML = data;
                     }).catch(err=>
-                    console.error("Error loading Navbar:", err));
+                    console.error("Error loading branner:", err));
 
     </script>
         </header>
     
     <div class="page-body content">
-        <div class="grid-card" id="cardDemon"><!--จำนวนคอมลัมน์ที่จะแสดงในหน้าจอ-->
+        
+        <div class="grid-card" id="cardDemon" onclick="showDataCharacter()"><!--จำนวนคอมลัมน์ที่จะแสดงในหน้าจอ-->
                 <!--js ตัวละครการ์ด-->
                 
             </div>
@@ -49,6 +50,15 @@
           <button id="list"></button>  
    --> 
 </div>
+
+<script>
+    function showDataCharacter() {
+      /*  alert("Hello TEST Anime");*/
+       /* alert("hello");*/
+       window.location.href = 'dataCharacter.html';
+      /*document.getElementById("demo").innerHTML = "Hello Anime";*/
+    }
+    </script>
 
 <script src="character.js"></script>
 </body>

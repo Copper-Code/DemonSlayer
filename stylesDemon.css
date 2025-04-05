@@ -457,7 +457,7 @@ text-decoration: underline; /* เอฟเฟกต์เมื่อวาง�
 
 
 
-/*Grid Body Start Card*/
+/*Grid Body Start Card/*Grid Body Start Card* แบ่งหัว/เนื้อหา/foter/*/
 .grid{
 display: grid;
 grid-template-columns:1fr;
