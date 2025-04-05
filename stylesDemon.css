@@ -40,6 +40,7 @@ body{
     font-family: "Kanit", sans-serif;
     font-weight: 400px;
     font-style: normal;     
+    background-color:  rgb(34, 32, 32);
    /* background-color: var(--bg-dark);*/
 }
 html,body{
@@ -318,7 +319,8 @@ body{
   padding: 0;
   font-family: "Kanit", sans-serif;
   font-weight: 400px;
-  font-style: normal;     
+  font-style: normal;    
+  background-color: rgb(34, 32, 32); 
   /*background-color: var(--bg-dark);*/
 }
 html,body{
@@ -602,7 +604,8 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
     padding: 0;
     font-family: "Kanit", sans-serif;
     font-weight: 400px;
-    font-style: normal;     
+    font-style: normal;
+    background-color:  rgb(34, 32, 32);     
    /* background-color: var(--bg-dark);*/
   }
   html,body{
@@ -881,7 +884,8 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
     padding: 0;
     font-family: "Kanit", sans-serif;
     font-weight: 400px;
-    font-style: normal;     
+    font-style: normal;    
+    background-color:  rgb(34, 32, 32); 
    /* background-color: var(--bg-dark);*/
   }
   html,body{
