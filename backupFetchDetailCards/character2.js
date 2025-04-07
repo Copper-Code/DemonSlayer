@@ -44,7 +44,7 @@ async function getCharacter(){
                 //เก็บid ของการ์ด
                 //เมื่อคลิกการ์ด จะดึงค่าจาก attribute ชื่อ data-id ของการ์ดใบนั้น (เช่น data-id="a12") แล้วเก็บไว้ในตัวแปร charmainId
                 const charmainId = cardDemon.getAttribute("data-id")
-                //ใช้ .find() เพื่อค้นหา object ที่ item.id ตรงกับ charmainId (คือ ID ของการ์ด)
+                //ใช้ .find() เพื่อค้นหา object ที่ item.id ตรงกับ charmainId (คือ ID ของการ์ด)\
                 // ถ้าเจอตัวละคร จะเก็บไว้ในตัวแปร characterFind
                 const characterFind = json.character.find(item=>item.id===charmainId);
                
@@ -52,12 +52,14 @@ async function getCharacter(){
                     console.log("ไม่พบตัวละคร อาจถูกมุซันฆ่า");
                     return;
                 }
-              //ถ้าเจอส่ง id ที่ click ไปที่หน้า dataCharacter.html เพื่อทำการ fetch json เพื่อแสดงรายละเอียดตัวละคร
+              
                window.location.href = `dataCharacter.html?id=${charmainId}`;
-        
+               
+
+               // `;
+                    
             });
             });
-            
 } catch(error){
     console.error("เกิดข้อผิดพลาด : ", error);
     cardDemon.innerHTML ="<h1>ชะอุ๊ย เกิดข้อผิดพลาดไม่คาดฝัน 🐕‍🦺 </h1>"
@@ -66,3 +68,52 @@ async function getCharacter(){
 
 document.addEventListener("DOMContentLoaded",getCharacter);
 
+/* ตัวอย่างการใช้
+const clickCard = document.getElementById('testClick');
+clickCard.addEventListener('click',()=>{
+    window.location.href = 'song.html';
+
+}); */
+
+
+
+
+/*const clickCard = document.getElementById('testClick');
+clickCard.addEventListener('click',()=>{
+    window.location.href = 'song.html';
+
+});*/
+/*
+  //4. กรณีเมื่อคลิกการ์ดให้แสดงข้อมูลการ์ดนั้น
+
+    //4.1 หา object ที่  id = id
+    const detailCard = DataTransfer.character.find(c=>c.id === id);
+
+    //4.2 แสดงข้อมูลการ์ดนั้น
+
+    /*cardAll = การเลือกการ์ดทุกใบที่สร้างขึ้นใน DOM*/ 
+   // const cardAll = document.querySelectorAll(".content-card")
+    /*จับเหตุการณ์ การคลิกแต่ละการ์ด*/
+   // cardAll.forEach(cardDemon=>{
+         /** function click*/
+     //   cardDemon.addEventListener("click",()=>{
+     //   const id = item.id;    
+     //   const name = item.name;
+     //   const skill = item.magic;   
+        /**click ส่ง id ไปยัง dataCharacter.html */
+
+       // window.location.href =`dataCharacter.html?id=${item.id}`;
+        /*ดึง id จาก url*/
+      /*  const params = new URLSearchParams(window.location.search);
+        const name = params.get("name");*/
+
+       // });
+   // });
+    /*
+    cardAll.forEach(cardDemon=>{
+        cardDemon.querySelector("click",()=>{
+
+            alert("click จ้า");
+        });
+    });
+        */

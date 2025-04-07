@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Demon Slayer || ตัวละคร</title>
+    <link rel="stylesheet" href="stylesDemon.css">
 </head>
-<body>
-    <h1>Hello writer</h1>
+    <body>
+        <div class="grid">
+            <header class="page-header content">
+                <div id="navbar"></div> <!-- ตำแหน่ง Navbar -->
+         <!-- เรียกใช้ navbar -->
+            <script>
+                    fetch("../nav.html") //ดึงข้อมูลจาก nav.html
+                        .then(response => response.text())
+                        .then(data => {
+                        document.getElementById("navbar").innerHTML = data;
+                        }).catch(err=>
+                        console.error("Error loading Navbar:", err));
     
-</body>
+            </script>
+            
+            <div id ="branner"></div>
+            <script>
+                    fetch("../branner.html")
+                    .then(response => response.text())
+                        .then(data => {
+                        document.getElementById("branner").innerHTML = data;
+                        }).catch(err=>
+                        console.error("Error loading branner:", err));
+    
+        </script>
+            </header>
+    <h1>Hello writer</h1>
+    <p>โคโยฮารุ โกโตเกะ
+        吾峠 呼世晴
+        เกิด	5 พฤษภาคม 1989 (อายุ 35 ปี)
+        จังหวัดฟุกุโอกะประเทศญี่ปุ่น
+        สัญชาติ	ญี่ปุ่น
+        พื้นที่	นักวาดการ์ตูน
+        ผลงานเด่น	นักฆ่าปีศาจ: คิเมสึ โนะ ไยบะ
+        รางวัล	
+        รางวัลโนมา (2020)
+        รางวัลวัฒนธรรมเทะซึกะ โอซามุ (2021)
+        รางวัลสมาคมนักวาดการ์ตูนญี่ปุ่น (2021)</p>
+    <strong>โคโยฮารุ โกโตเกะ( ญี่ปุ่น :吾峠 呼世晴, เฮปเบิร์น : Gotōge Koyoharuเกิดเมื่อวันที่ 5 พฤษภาคม 1989)เป็นนักวาดการ์ตูน ชาวญี่ปุ่น ซึ่งเป็นที่รู้จักจากการ์ตูนชุดDemon Slayer: Kimetsu no Yaiba (2016–2020) ในเดือนกุมภาพันธ์ 2021 มังงะเรื่องนี้มียอดจำหน่ายมากกว่า 150 ล้านเล่ม (รวมถึงฉบับดิจิทัล) ทำให้เป็นหนึ่งในมังงะชุดที่ขายดีที่สุดตลอดกาล
+
+        โกโตเกะถูกจัดให้เป็น "ปรากฏการณ์" ใน รายชื่อ 100 บุคคลผู้ทรงอิทธิพลประจำปีของ นิตยสาร ไทม์และกลายเป็นนักวาดการ์ตูนคนแรกที่ได้รับรางวัลนี้</strong>
+        <h3>
+            ผลงาน
+คาการิการิ(過狩り狩り) (2013; one-shot )
+Monju Shirō Kyōdai (文殊史郎兄弟) (2014; one-shot ตีพิมพ์ในJump Next!ของShueisha )
+Rokkotsu-san (肋骨さん) (2014; one-shot ตีพิมพ์ใน Weekly Shōnen Jumpของ Shueisha )
+Haeniwa no Zigzag (蠅庭のジグザグ) (2015; one-shot ตีพิมพ์ในWeekly Shōnen Jump ของ Shueisha )
+Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba ) (2016–2020; ต่อเนื่องใน Weekly Shōnen Jumpของ Shueishaและรวบรวมใน 23เล่ม tankōbon ) [ 24 ] [ 25 ]
+Koyoharu Gotouge Before Demon Slayer: Kimetsu no Yaiba (吾峠呼世晴短編集, Gotōge Koyoharu Tanpenshū ) (2019; รวบรวมเล่มของ Gotouge's four one-shots ตีพิมพ์โดย Shueisha)
+        </h3>
+
+    </body>
 </html>

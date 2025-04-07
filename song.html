@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Demon Slayer || เพลง</title>
+    <link rel="stylesheet" href="stylesDemon.css">
 </head>
 <body>
-    <h1>Hello Song</h1>
+    <body>
+        <div class="grid">
+            <header class="page-header content">
+                <div id="navbar"></div> <!-- ตำแหน่ง Navbar -->
+         <!-- เรียกใช้ navbar -->
+            <script>
+                    fetch("../nav.html") //ดึงข้อมูลจาก nav.html
+                        .then(response => response.text())
+                        .then(data => {
+                        document.getElementById("navbar").innerHTML = data;
+                        }).catch(err=>
+                        console.error("Error loading Navbar:", err));
+    
+            </script>
+            
+            <div id ="branner"></div>
+            <script>
+                    fetch("../branner.html")
+                    .then(response => response.text())
+                        .then(data => {
+                        document.getElementById("branner").innerHTML = data;
+                        }).catch(err=>
+                        console.error("Error loading branner:", err));
+    
+        </script>
+            </header>
+            <h1>Hello Song</h1>
+            <a href="https://youtu.be/RzqbMWK-cj0?si=Jr8AluGwZNNcs1W_" target="_blank">เพลงศึกรถไฟ</a>
 </body>
 </html>
+
+

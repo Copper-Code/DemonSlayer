@@ -2,6 +2,7 @@
 {
     "character": [
     {
+        "id" : "1",
         "type" :"main_char",
         "name" : "คามาโดะ ทันจิโร่",
         "role" : "พระเอก,ตัวหลัก,หน่วยดาบพิฆาตอสูร",
@@ -9,11 +10,12 @@
         "birthday" :"14 กรกฎาคม",
         "height" : "165 ซม.",
         "weight":" 61 กก.",
-        "้history" :"ทันจิโร่เป็นเด็กผู้ชายใจดีมีแผลเป็นที่หน้าผากอาศัยอยู่ในภูเขามีอาชีพขายถ่านวันหนึ่งครอบครัวถูกอสูรสังหาร เหลือรอดเพียงเนซึโกะ น้องสาวที่กลายเป็นอสูรเขาจึงเข้าหน่วยพิฆาตอสูรเพื่อปกป้องและหาทางให้น้องสาวกลับมาเป็นมนุษย์",
+        "history":"ทันจิโร่เป็นเด็กผู้ชายใจดีมีแผลเป็นที่หน้าผากอาศัยอยู่ในภูเขามีอาชีพขายถ่านวันหนึ่งครอบครัวถูกอสูรสังหาร เหลือรอดเพียงเนซึโกะ น้องสาวที่กลายเป็นอสูรเขาจึงเข้าหน่วยพิฆาตอสูรเพื่อปกป้องและหาทางให้น้องสาวกลับมาเป็นมนุษย์",
         "img" : "./imgDemon/mainChar/tanjiro5.jpg"
         
     },
     {
+        "id" : "2",
         "type": "main_char",
         "name": "คามาโดะ เนซึโกะ",
         "role": "น้องสาวของทันจิโร่",
@@ -25,6 +27,7 @@
         "img": "./imgDemon/mainChar/Nesuko.jpg"
     },
     {
+        "id" : "3",
         "type": "main_char",
         "name": "อากัตสึมะ เซนอิทสึ",
         "role": "เพื่อนสนิทของทันจิโร่, นักล่าอสูร",
@@ -36,6 +39,7 @@
         "img": "./imgDemon/mainChar/Zenitsu.jpg"
     },
     {
+        "id" : "4",
         "type": "main_char",
         "name": "ฮาชิบิระ อิโนะสุเกะ",
         "role": "เพื่อนสนิทของทันจิโร่, นักล่าอสูร",
@@ -47,6 +51,7 @@
         "img": "./imgDemon/mainChar/Inosuke3.jpg"
     },
     {
+        "id" : "5",
         "type": "former_hashira",
         "name": "โคคุชิโบ (มิจิคัตสึ สึกิคุนิ)",
         "role": "อดีตเสาหลักปราณจันทรา",
@@ -58,6 +63,7 @@
         "img": "./imgDemon/mainChar/kokuchiba2.jpg"
     },
     {
+        "id" : "6",
         "type": "former_hashira",
         "name": "อุบุยะชิกิ คากายะ",
         "role": "อดีตผู้นำหน่วยพิฆาตอสูร",
@@ -69,6 +75,7 @@
         "img": "./imgDemon/mainChar/ubuyashiki3.jpg"
     },
     {
+        "id" : "7",
         "type": "former_hashira",
         "name": "เร็นโงคุ ชินจูโร่",
         "role": "อดีตเสาหลักเพลิง, พ่อของเร็นโงคุ เคียวจูโร่",
@@ -81,6 +88,7 @@
     },
     
     {
+        "id" : "8",
         "type": "hashira",
         "name": "เร็นโงคุ เคียวจูโร่",
         "role": "เสาหลักเพลิง",
@@ -92,6 +100,7 @@
         "img": "./imgDemon/mainChar/Rengoku2.jpg"
     },
     {
+        "id" : "8",
         "type": "hashira",
         "name": "อุซุย เท็นเง็น",
         "role": "เสาหลักเสียง",
@@ -103,6 +112,7 @@
         "img": "./imgDemon/mainChar/Usui3.jpg"
     },
     {
+        "id" : "9",
         "type": "hashira",
         "name": "โทคิโตะ มุอิจิโร่",
         "role": "เสาหลักหมอก",
@@ -114,6 +124,7 @@
         "img": "./imgDemon/mainChar/tokito.jpg"
     },
     {
+        "id" : "10",
         "type": "hashira",
         "name": "คันโรจิ มิตสึริ",
         "role": "เสาหลักความรัก",
@@ -125,6 +136,7 @@
         "img": "./imgDemon/mainChar/kunroji.jpg"
     },
     {
+        "id" : "11",
         "type": "hashira",
         "name": "อิกุโระ โอบาไน",
         "role": "เสาหลักอสรพิษ",
@@ -136,6 +148,7 @@
         "img": "./imgDemon/mainChar/ikura2.jpg"
     },
     {
+        "id" : "12",
         "type": "hashira",
         "name": "ฮิเมจิมะ เกียวเม",
         "role": "เสาหลักศิลา",
@@ -147,6 +160,7 @@
         "img": "./imgDemon/mainChar/kiawme4.jpg"
     },
     {
+        "id" : "12",
         "type": "hashira",
         "name": "ชินาสึกาวะ ซาเนมิ",
         "role": "เสาหลักวายุ",
@@ -158,6 +172,7 @@
         "img": "./imgDemon/mainChar/zanemi.jpg"
     },
     {
+        "id" : "13",
         "type": "hashira",
         "name": "โคโจ ชิโนบุ",
         "role": "เสาหลักแมลง",
@@ -169,6 +184,7 @@
         "img": "./imgDemon/mainChar/shinobu2.jpg"
     },
     {
+        "id" : "14",
         "type": "upper_moon",
         "name": "โคคุชิโบ",
         "role": "อสูรจันทราข้างขึ้นที่ 1",
@@ -180,6 +196,7 @@
         "img": "./imgDemon/mainChar/kokushibo.jpg"
     },
     {
+        "id" : "15",
         "type": "upper_moon",
         "name": "โดมะ",
         "role": "อสูรจันทราข้างขึ้นที่ 2",
@@ -191,6 +208,7 @@
         "img": "./imgDemon/mainChar/doma.jpg"
     },
     {
+        "id" : "16",
         "type": "upper_moon",
         "name": "อาคาสะ",
         "role": "อสูรจันทราข้างขึ้นที่ 3",
@@ -202,6 +220,7 @@
         "img": "./imgDemon/mainChar/akasa2.jpg"
     },
     {
+        "id" : "17",
         "type": "upper_moon",
         "name": "ฮันเทงุ",
         "role": "อสูรจันทราข้างขึ้นที่ 4",
@@ -213,6 +232,7 @@
          "img": "./imgDemon/mainChar/huntengu.jpg"
     },
     {
+        "id" : "18",
         "type": "upper_moon",
         "name": "เกียวโกะ",
         "role": "อสูรจันทราข้างขึ้นที่ 5",
@@ -224,6 +244,7 @@
          "img": "./imgDemon/mainChar/kiawko.jpg"
     },
     {
+        "id" : "19",
         "type": "upper_moon",
         "name": "ไคกาคุ",
         "role": "อสูรจันทราข้างขึ้นที่ 6",
@@ -235,6 +256,7 @@
         "img": "./imgDemon/mainChar/kaikaku.jpg"
     },
     {
+        "id" : "20",
         "type": "lower_moon",
         "name": "เอ็นมุ",
         "role": "อสูรจันทราข้างแรมที่ 1",
@@ -246,6 +268,7 @@
         "img": "./imgDemon/mainChar/emu2.jpg"
     },
     {
+        "id" : "21",
         "type": "lower_moon",
         "name": "โรคุโร",
         "role": "อสูรจันทราข้างแรมที่ 2",
@@ -257,6 +280,7 @@
         "img": "./imgDemon/mainChar/rokuro.png"
     },
     {
+        "id" : "22",
         "type": "lower_moon",
         "name": "วาคุราบะ",
         "role": "อสูรจันทราข้างแรมที่ 3",
@@ -268,6 +292,7 @@
          "img": "./imgDemon/mainChar/wqkuraba.png"
     },
     {
+        "id" : "23",
         "type": "lower_moon",
         "name": "มุคาโกะ",
         "role": "อสูรจันทราข้างแรมที่ 4",
@@ -279,6 +304,7 @@
         "img": "./imgDemon/mainChar/mokuko.jpg"
     },
     {
+        "id" : "24",
         "type": "lower_moon",
         "name": "รุย",
         "role": "อสูรจันทราข้างแรมที่ 5",
@@ -290,6 +316,7 @@
         "img": "./imgDemon/mainChar/rui.jpg"
     },
     {
+        "id" : "25",
         "type": "lower_moon",
         "name": "คามะนุเอะ",
         "role": "อสูรจันทราข้างแรมที่ 6",

@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demon Slayer || รายละเอียดตัวละคร</title>
+    <title>Demon Slayer || Details</title>
 </head>
 <body>
-
-    <div class="grid">
-        <header class="page-header content">
-            <div id="navbar"></div> <!-- ตำแหน่ง Navbar -->
-     <!-- เรียกใช้ navbar -->
-        <script>
-                fetch("../nav.html") //ดึงข้อมูลจาก nav.html
-                    .then(response => response.text())
-                    .then(data => {
-                    document.getElementById("navbar").innerHTML = data;
-                    }).catch(err=>
-                    console.error("Error loading Navbar:", err));
-
-        </script>
-        </header>
-
-
     <div id="detailChar">กำลังโหลดข้อมูล...</div>
-    <script>
+    <script> 
+        // ดึงข้อมูลจาก localStorage
+        const characterDetail = localStorage.getItem('characterDetail');
+        if(characterDetail){
+          document.getElementById("detailChar").innerHTML=characterDetail;
+        }else{
+          document.getElementById("detaiChar").innerHTML="<h2> ไม่พบข้อมูลตัวละคร อาจถูกมุซันดักฆ่าระหว่างโหลด index3.html</h2>";
+        }
+      
+      </script>
+      
+<script src="character3.js"></script>
+</body>
+</html>
+
+
+
+ <!-- <script>
         const urlParams = new URLSearchParams(window.location.search);
         const charId = urlParams.get("id")
         //fetch เพื่อโหลดข้อมูลจาก json
@@ -48,6 +48,4 @@
              <p>ประวัติย่อ : ${characterDetail.history}</p> `;
         });
     </script>
-
-</body>
-</html>
+-->
