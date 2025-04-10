@@ -1,40 +1,202 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demon Slayer || ตัวละคร</title>
-    <link rel="stylesheet" href="stylesDemon.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesDemon.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<style>
+.margin-box{
+    margin: 50px;
+}
+    .collapsible {
+      background-color: #777777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+    
+    .collapsible:after {
+      content: '\002B';
+      color: white;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "\2212";
+    }
+    
+    .content-coll {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #f1f1f1;
+    }
+    </style>
 </head>
 
-    <body>
-        <div class="grid">
-            <header class="page-header content">
-                <div id="navbar"></div> <!-- ตำแหน่ง Navbar -->
-         <!-- เรียกใช้ navbar -->
-            <script>
-                    fetch("../nav.html") //ดึงข้อมูลจาก nav.html
-                        .then(response => response.text())
-                        .then(data => {
-                        document.getElementById("navbar").innerHTML = data;
-                        }).catch(err=>
-                        console.error("Error loading Navbar:", err));
-    
-            </script>
-            
-            <div id ="branner"></div>
-            <script>
-                    fetch("../branner.html")
+<body style="background-color: #000000;">
+
+
+        <header class="page-header content">
+            <div id="navbar"></div> <!-- ตำแหน่ง Navbar -->
+     <!-- เรียกใช้ navbar -->
+        <script>
+                fetch("../nav.html") //ดึงข้อมูลจาก nav.html
                     .then(response => response.text())
-                        .then(data => {
-                        document.getElementById("branner").innerHTML = data;
-                        }).catch(err=>
-                        console.error("Error loading branner:", err));
-    
+                    .then(data => {
+                    document.getElementById("navbar").innerHTML = data;
+                    }).catch(err=>
+                    console.error("Error loading Navbar:", err));
+
         </script>
-            </header>
-    <h1>เนื้อหาบนเว็บไซต์นี้จัดทำขึ้นเพื่อวัตถุประสงค์ในการศึกษาเกี่ยวกับการเขียนโค้ดเท่านั้น ข้อมูลที่ให้ไว้อาจไม่ครบถ้วนสมบูรณ์หรือถูกต้องตามมาตรฐานในทุกกรณี 
-        ผู้ใช้งานโปรดใช้วิจารณญาณและศึกษาข้อมูลเพิ่มเติมตามความเหมาะสม
-    </h1>
+        
+        <div id ="branner"></div>
+        <script>
+                fetch("../branner.html")
+                .then(response => response.text())
+                    .then(data => {
+                    document.getElementById("branner").innerHTML = data;
+                    }).catch(err=>
+                    console.error("Error loading branner:", err));
+
+    </script>
+        </header>
+
+  <div class="margin-box">  
+        <div class="alert alert-danger" role="alert">
+            *เนื้อหาบนเว็บไซต์นี้จัดทำขึ้นเพื่อวัตถุประสงค์ในการศึกษาเกี่ยวกับการเขียนโค้ดเท่านั้น ข้อมูลที่ให้ไว้อาจไม่ครบถ้วนสมบูรณ์หรือถูกต้องตามมาตรฐานในทุกกรณี 
+            ผู้ใช้งานโปรดใช้วิจารณญาณและศึกษาข้อมูลเพิ่มเติมตามความเหมาะสม
+          </div>
+        
+<h2 style="color: #f1f1f1;">DemonSlayer Credit</h2>
+
+<p style="color: #f1f1f1;"><strong>ข้อมูลเกี่ยวกับฉัน:</strong></p>
+<button class="collapsible">About me</button>
+<div class="content-coll">
+    <br>
+    <p><strong>I'm Copper </strong></p>
+    <p>เรียนจบวิทยาการคอมพิวเตอร์ เว็บและโมบายเทคโนโลยี จาก.. มหาวิทยาลัยสุโขทัยธรรมาธิราช</p>
+    <p><strong>เป้าหมาย : </strong>
+        <li>ระยะสั้น 1 ปี : font-end Developer</li>
+        <li>ระยะกลาง 3-5 ปี : back-end Developer</li>
+        <li>ระยะยาว หลังจาก 5 ปี : full-stack Developer</li>
+    </p>
+    <p><strong>ความสนใจ </strong>
+        <li>การพัฒนาเว็บไซต์</li>
+        <li>การพัฒนาแอพพลิเคชั่น</li>
+        <li>Database</li>
+        <li>Ai</li>
+    </p>
+</div>
+<br>
+<p style="color: #f1f1f1;"><strong>แหล่งที่มาของข้อมูล : </strong></p>
+<button class="collapsible">Thank! Picture</button>
+<div class="content-coll">
+    <br>
+    <p>ขอบคุณภาพอนิเมชั่นสวยๆ จาก <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>  และอื่นๆ  
+    <ul>
+        <li><a href="https://pin.it/HYcGpLz1e" target="_parent">ภาพ branner </a></li>
+        <li><a href="https://pin.it/3Bo7d3UdN" target="_parent">ภาพ ทันจิโร่</a></li>
+        <li><a href="https://pin.it/2ccRhklMt"  target="_parent">ภาพ เซนอิทสึ</a></li>
+        <li><a href="https://pin.it/62fyvoWWI" target="_parent">ภาพ อิโนะสุเกะ</a>
+        <li><a href="https://pin.it/4wojWSmVd" target="_parent">ภาพ โยริอิจิ สึกิคุนิ</a></li>
+        <li><a href="https://pin.it/4Bq8Bpcif" target="_parent">ภาพ อุบุยะชิกิ คากายะ</a></li>
+        <li><a href="https://www.reddit.com/r/KimetsuNoYaiba/comments/tehn90/what_would_happen_if_shinjuro_trained_kyojuro/?tl=th&rdt=44322" target="_parent">ภาพ ชินจูโร่</a></li>
+        <li><a href="https://pin.it/7t0bYH0bn" target="_parent">ภาพ เร็นโงคุ เคียวจูโร่</a></li>
+        <li><a href="https://pin.it/4BoBpPpBs" target="_parent">ภาพ อุซุย เท็นเง็น</a></li>
+        <li><a href="https://pin.it/1uqtRNeWq" target="_parent">ภาพ โทคิโตะ มุอิจิโร่</a></li>
+        <li><a href="https://pin.it/4MxZcnKgv" target="_parent">ภาพ คันโรจิ มิตสึริ</a></li>
+        <li><a href="https://pin.it/6aZELIGfY" target="_parent">ภาพ อิกุโระ โอบาไน</a></li>
+        <li> <a href="https://pin.it/4c33tntma" target="_parent">ภาพ ฮิเมจิมะ เกียวเม</a></li>
+        <li><a href="https://pin.it/6v6wamI0N" target="_parent">ภาพ ชินาสึกาวะ ซาเนมิ</a></li>
+        <li><a href="https://pin.it/KwiIJ7nbF" target="_parent">ภาพ โคโจ ชิโนบุ</a></li>
+        <li><a href="https://pin.it/5jbLL0uu4"target="_parent">ภาพ โคคุชิโบ (มิจิคัตสึ สึกิคุนิ)</a></li>
+        <li><a href="https://pin.it/4vJspSmoV"target="_parent">ภาพ โดมะ</a></li>
+        <li><a href="https://pin.it/6efP8ra9C"target="_parent">ภาพ อาคาสะ</a></li>
+        <li><a href="https://pin.it/1sV9jvq2C"target="_parent">ภาพ ฮันเทงุ</a></li>
+        <li><a href="https://pin.it/5t5X6X9W2"target="_parent">ภาพ เกียวโกะ</a></li>
+        <li><a href="https://pin.it/2lIsRAk9v"target="_parent">ภาพ ไคกาคุ</a></li>
+        <li><a href="https://pin.it/5I8Zgq5UL"target="_parent">ภาพ เอ็นมุ</a></li>
+        <li><a href="https://pin.it/2m7NCcdlG"target="_parent">ภาพ โรคุโร</a></li>
+        <li><a href="https://pin.it/3BKErLvYg"target="_parent">ภาพ วาคุราบะ</a></li>
+        <li><a href="https://pin.it/4c5zTOv1v"target="_parent">ภาพ มุคาโกะ</a></li>
+        <li><a href="https://pin.it/6jdC75AfO"target="_parent">ภาพ รุย</a></li>
+        <li><a href="https://pin.it/52gTJaNEh"target="_parent">ภาพ คามะมุเอะ</a></li>
+        <li><a href="https://images.app.goo.gl/nw123jis97Qq2tbK9">Profile</a></li>
+    </ul>  
+  
+
+</p>
+</div>
+<button class="collapsible">Thank! Information</button>
+<div class="content-coll">
+    <br>
+  <li><a href="https://www.oneesports.co.th/anime/%e0%b9%82%e0%b8%a2%e0%b8%a3%e0%b8%b4%e0%b8%ad%e0%b8%b4%e0%b8%88%e0%b8%b4-%e0%b8%aa%e0%b8%b6%e0%b8%81%e0%b8%b4%e0%b8%84%e0%b8%b8%e0%b8%99%e0%b8%b4/" target="_parent">โยริอิจิ สึกิคุนิ</a></li>
+  <li><a href="https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%B2%E0%B8%9A%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B8%B2%E0%B8%95%E0%B8%AD%E0%B8%AA%E0%B8%B9%E0%B8%A3">วิกิพีเดีย</a></li>
+  <li><a href="https://www.online-station.net/news/326980/">https://www.online-station.net/news/326980/</a></li>
+  <li> <a href="https://www.oneesports.co.th/anime/12-%e0%b8%ad%e0%b8%aa%e0%b8%b9%e0%b8%a3%e0%b8%88%e0%b8%b1%e0%b8%99%e0%b8%97%e0%b8%a3%e0%b8%b2/">https://www.oneesports.co.th/anime/</a></li>
+  <li><a href="https://entertainment.trueid.net/detail/1YZ7ZQQdxBL5">https://entertainment.trueid.net/</a></li>
+  <li><a href="https://openai.com/chatgpt/overview/">chatgpt</a></li>
+  <br>
+</div>
+
+<button class="collapsible">Tools and Programs </button>
+<div class="content-coll">
+    <br>
+  <p><strong>เครื่องมือและโปรแกรมในการศึกษา-สร้างเว็บไซต์</strong></p>
+  <li>Visual studio code</li>
+  <li>Render.com</li>
+  <li>Github</li>
+  <li>w3schools</li>
+  <li>bootstrap</li>
+  <li>Copilot</li>
+  <li>chatgpt</li>
+  <li>youtube</li>
+  <br>
+  <br>
+  <p><strong>ภาษาในการเขียนเว็บไซต์</strong></p>
+  <li>Javascript</li>
+  <li>Html</li>
+  <li>Css</li>
+  <li>json</li>
+  <br>
+  <br>
+
+</div>
+<br>
+<br>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</div>    
 </body>
 </html>
