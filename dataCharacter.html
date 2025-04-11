@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demon Slayer || รายละเอียดตัวละคร</title>
+    <link rel="stylesheet" href="stylesDemon.css">
+
 </head>
 <body>
+
+
+
 
     <div class="grid">
         <header class="page-header content">
@@ -20,10 +25,27 @@
                     console.error("Error loading Navbar:", err));
 
         </script>
+
+        <div id ="branner"></div>
+        <script>
+               fetch("../branner.html")
+                   .then(response => response.text())
+                   .then(data => {
+                   document.getElementById("branner").innerHTML = data;
+                   }).catch(err=>
+                   console.error("Error loading branner:", err));
+
+        </script>
+
+
         </header>
 
 
-    <div id="detailChar">กำลังโหลดข้อมูล...</div>
+
+       
+
+
+    <div id="detailChar" class="card-detail">กำลังโหลดข้อมูล...</div>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const charId = urlParams.get("id")
@@ -37,15 +59,23 @@
                 document.getElementById("detailChar").innerHTML =`<h2> ไม่พบตัวละคร อาจถูกมุซันฆ่า </h2>`
                 return;
             }
-            document.getElementById("detailChar").innerHTML=`
-             <img src="${characterDetail.img}" alt="${characterDetail.name}  width="auto" height="500">
-            <h2>${characterDetail.name}</h2>
-            <p>บทบาท :${characterDetail.role}</p>
-            <p>พลัง : ${characterDetail.magic}</p>   
-            <p>วันเกิด : ${characterDetail.birthday}</p>
-            <p>น้ำหนัก : ${characterDetail.weight}</p>
-            <p>ส่วนสูง : ${characterDetail.height}</p>
-             <p>ประวัติย่อ : ${characterDetail.history}</p> `;
+            document.getElementById("detailChar").innerHTML= `
+        <div class="flex-container-card-detail">
+             <div style="flex-grow: 3">
+                     <img src="${characterDetail.img}" alt="${characterDetail.name} width="auto"  height="380px">
+             </div>
+          
+             <div style="flex-grow: 8">
+                    <h2>${characterDetail.name}</h2>
+                    <p><strong>บทบาท</strong> : ${characterDetail.role}</p>
+                    <p><strong>พลัง</strong> : ${characterDetail.magic}</p>   
+                    <p><strong>วันเกิด</strong> : ${characterDetail.birthday}</p>
+                    <p><strong>น้ำหนัก</strong> : ${characterDetail.weight}</p>
+                    <p><strong>ส่วนสูง</strong> : ${characterDetail.height}</p>
+                    <p><strong>ประวัติย่อ</strong> : ${characterDetail.history}</p>
+             </div>
+          </div> `
+             ;
         });
     </script>
 
