@@ -1234,7 +1234,7 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
 
   /*------------------------------------------------------------------------------------------------------------------------------*/
   /*----------------------Detail Character  ขนาดหน้าจอ 601 px ขึ้นไป -------------------------*/
-  @media (min-width: 770px) {
+  @media (min-width: 1000px) {
   .flex-container-card-detail {
     border-radius: 30px;
     display: flex;
@@ -1285,29 +1285,22 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
 }
 
 
- /*----------------------Detail Character  ขนาดหน้าจอ 600 px ขึ้นไป -------------------------*/
- @media (max-width: 769px) {
+ /*----------------------Detail Character  ขนาดหน้าจอ 601 px - 999 px ขึ้นไป -------------------------*/
+@media (min-width:601px) and (max-width: 999px) {
+
   .flex-container-card-detail {
-    flex-direction:column;
     border-radius: 30px;
     display: flex;
     justify-self: center;
-    align-items: center;
+    align-items: stretch;
     background-color: #6c0000;
-    width: 20rem;
-    margin: 50px auto;
-    margin-top: 50px;
-    margin-bottom: 50px;;
-    padding-right: 15px;
-    padding-left: 10px;
-    padding-top: 15px;
-   
-  
+    width: 35rem;
+
    /* margin-top: 100px;
     margin-left: 200px;
     margin-right: 100px;
     margin-bottom: 100px;*/
-
+    margin: 100px;
     border: 2px solid rgb(255, 0, 0);
    
   }
@@ -1317,14 +1310,14 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
     align-items: center;
     background-color:#6c0000;
     color: white;
+    margin: 20px;
     text-align: left;
-    width: 18rem ;
-    height: auto;
+    width: 35px;
+    height: 200px;
     box-sizing: border-box;
-    line-height: 40px;
-    font-size: 14px;
+    line-height: 20px;
+    font-size: 12.5px;
     overflow-wrap: break-word;
-    margin-bottom: 10px;
    /* word-wrap: break-word;*/
     /*white-space: normal; *//* ขึ้นบรรทัดใหม่อัตโนมัติ */
     /* overflow-wrap: break-word;*/ /* อีกคำสั่งที่มีผลเหมือนกัน */
@@ -1335,16 +1328,128 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
   .flex-container-card-detail img{
     border: 2px solid rgb(255, 0, 0);
     border-radius: 30px;
-    width: 290px; /* หรือกำหนดขนาดตามที่ต้องการ เช่น 300px */
-    height: 350px; /* ปรับความสูงตามต้องการ */
+    width: 170px; /* หรือกำหนดขนาดตามที่ต้องการ เช่น 300px */
+    height: 100%; /* ปรับความสูงตามต้องการ */
     overflow: hidden; /* ครอบภาพให้พอดีกับคอนเทนเนอร์ */
     object-fit: cover;
-    display: block;
-    margin-bottom: 20px;
+    display: block; 
+    margin-right: 20px;
+}
+}
+
+
+ /*----------------------Detail Character  ขนาดหน้าจอ 600 px ขึ้นไป -------------------------*/
+ 
+ @media (max-width: 600px) { 
+ 
+
+    .flex-container-card-detail {
+      border-radius: 30px;
+      display: flex;
+      justify-self: center;
+      align-items: stretch;
+      background-color: #6c0000;
+      width: 35rem;
+  
+     /* margin-top: 100px;
+      margin-left: 200px;
+      margin-right: 100px;
+      margin-bottom: 100px;*/
+      margin: 100px;
+      border: 2px solid rgb(255, 0, 0);
+     
+    }
+    
+    .flex-container-card-detail  > div {
+      justify-content: flex-start;
+      align-items: center;
+      background-color:#6c0000;
+      color: white;
+      margin: 20px;
+      text-align: left;
+      width: 35px;
+      height: 200px;
+      box-sizing: border-box;
+      line-height: 20px;
+      font-size: 12.5px;
+      overflow-wrap: break-word;
+     /* word-wrap: break-word;*/
+      /*white-space: normal; *//* ขึ้นบรรทัดใหม่อัตโนมัติ */
+      /* overflow-wrap: break-word;*/ /* อีกคำสั่งที่มีผลเหมือนกัน */
+  
+  
+    
+    }
+    .flex-container-card-detail img{
+      border: 2px solid rgb(255, 0, 0);
+      border-radius: 30px;
+      width: 170px; /* หรือกำหนดขนาดตามที่ต้องการ เช่น 300px */
+      height: 100%; /* ปรับความสูงตามต้องการ */
+      overflow: hidden; /* ครอบภาพให้พอดีกับคอนเทนเนอร์ */
+      object-fit: cover;
+      display: block; 
+      margin-right: 20px;
+    }
+  }
+
+
+ /*----------------------Detail Character  ขนาดหน้าจอ 600 px ขึ้นไป -------------------------*/
+ /* @media (max-width: 600px) { */
+/* .flex-container-card-detail { */
+    /* flex-direction:column; */
+    /* border-radius: 30px; */
+    /* display: flex; */
+    /* justify-self: center; */
+    /* align-items: center; */
+    /* background-color: #6c0000; */
+    /* width: 20rem; */
+    /* margin: 50px auto; */
+    /* margin-top: 50px; */
+    /* margin-bottom: 50px;; */
+    /* padding-right: 15px; */
+    /* padding-left: 10px; */
+    /* padding-top: 15px; */
+   
+  
+   /* margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-bottom: 100px;*/
+
+    /* border: 2px solid rgb(255, 0, 0); */
+   
+  /* } */
+  
+  /* .flex-container-card-detail  > div { */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* background-color:#6c0000; */
+    /* color: white; */
+    /* text-align: left; */
+    /* width: 18rem ; */
+    /* height: auto; */
+    /* box-sizing: border-box; */
+    /* line-height: 40px; */
+    /* font-size: 14px; */
+    /* overflow-wrap: break-word; */
+    /* margin-bottom: 10px; */
+   /* word-wrap: break-word;*/
+    /*white-space: normal; *//* ขึ้นบรรทัดใหม่อัตโนมัติ */
+    /* overflow-wrap: break-word;*/ /* อีกคำสั่งที่มีผลเหมือนกัน */
+  /* } */
+  /* .flex-container-card-detail img{ */
+    /* border: 2px solid rgb(255, 0, 0); */
+    /* border-radius: 30px; */
+    /* width: 290px; หรือกำหนดขนาดตามที่ต้องการ เช่น 300px */
+    /* height: 350px; ปรับความสูงตามต้องการ */
+    /* overflow: hidden; ครอบภาพให้พอดีกับคอนเทนเนอร์ */
+    /* object-fit: cover; */
+    /* display: block; */
+    /* margin-bottom: 20px; */
   
 
-  }
-}
+  /* } */
+/* } */
 
 
 

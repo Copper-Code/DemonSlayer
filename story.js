@@ -16,14 +16,15 @@ async function loadstoryTable(){
         
    
            json.seasons.forEach((seasons)=>{
-           ssH +=seasons.name
-           console.log(ssH)
+         //  ssH +=seasons.name
+         //  console.log(ssH)
            // seasonsH.innerHTML+=`${seasons.name} `
-                      //  ssH +=`<h2>${seasons.name}</h2>` 
+                    //  ssH +=`<h2>${seasons.name}</h2>` 
   
           // document.getElementById("seasons").innerHTML=json.seasons.name;
            seasons.episodes.forEach((ep)=> {
            //     console.log("Loop item Start");
+         
                 trHTML+=`
                       
                         <tr>
@@ -40,9 +41,10 @@ async function loadstoryTable(){
             
       });
   
-      seasonsH.innerHTML=ssH;
+     
 
-      mytable.innerHTML=trHTML;     
+      mytable.innerHTML=trHTML;   
+      seasonsH.innerHTML=ssH;  
     //  mytable.innerHTML=trHTML
       //seasonsH.innerHTML=ssH;
         //mytable.innerHTML=trHTML;
