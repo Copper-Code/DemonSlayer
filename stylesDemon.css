@@ -1292,10 +1292,10 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
     border-radius: 30px;
     display: flex;
     justify-self: center;
-    align-items: stretch;
+    align-items: center;
     background-color: #6c0000;
     width: 20rem;
-    margin: 10px;
+    margin: 50px auto;
     margin-top: 50px;
     margin-bottom: 50px;;
     padding-right: 15px;
