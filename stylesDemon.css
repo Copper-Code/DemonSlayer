@@ -1349,7 +1349,7 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
       justify-self: center;
       align-items: stretch;
       background-color: #6c0000;
-      width: 35rem;
+      width: 30rem;
   
      /* margin-top: 100px;
       margin-left: 200px;
@@ -1361,18 +1361,19 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
     }
     
     .flex-container-card-detail  > div {
-      justify-content: flex-start;
+   
       align-items: center;
       background-color:#6c0000;
       color: white;
-      margin: 20px;
+      margin: 20px 5px 20px 20px;
       text-align: left;
-      width: 35px;
-      height: 200px;
+      width: 2rem;
+      height: 100%;
       box-sizing: border-box;
       line-height: 20px;
-      font-size: 12.5px;
+      font-size: 12px;
       overflow-wrap: break-word;
+      margin-right: 60px;
      /* word-wrap: break-word;*/
       /*white-space: normal; *//* ขึ้นบรรทัดใหม่อัตโนมัติ */
       /* overflow-wrap: break-word;*/ /* อีกคำสั่งที่มีผลเหมือนกัน */
@@ -1381,14 +1382,16 @@ text-overflow: ellipsis; /* เพิ่ม ... ในข้อความท�
     
     }
     .flex-container-card-detail img{
+      
       border: 2px solid rgb(255, 0, 0);
       border-radius: 30px;
-      width: 170px; /* หรือกำหนดขนาดตามที่ต้องการ เช่น 300px */
+      width: 150px; /* หรือกำหนดขนาดตามที่ต้องการ เช่น 300px */
       height: 100%; /* ปรับความสูงตามต้องการ */
       overflow: hidden; /* ครอบภาพให้พอดีกับคอนเทนเนอร์ */
       object-fit: cover;
       display: block; 
-      margin-right: 20px;
+      
+
     }
   }
 
