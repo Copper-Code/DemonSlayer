@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesDemon.css">
+
+  <title>Demon Slayer</title>
+  <!-- <style>
+      .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+      
+      .active, .collapsible:hover {
+        background-color: #555;
+      }
+      
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+      </style>
+     -->
+</head>
+
+<body>
+
+
+
+  <div class="grid">
+    <header class="page-header content">
+      <div id="navbar"></div> <!-- ตำแหน่ง Navbar -->
+      <!-- เรียกใช้ navbar -->
+      <script>
+        fetch("../nav.html") //ดึงข้อมูลจาก nav.html
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+          }).catch(err =>
+            console.error("Error loading Navbar:", err));
+      </script>
+
+      <!--branner-->
+      <div id="branner"></div>
+      <script>
+        fetch("../branner.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("branner").innerHTML = data;
+          }).catch(err =>
+            console.error("Error loading branner:", err));
+      </script>
+    </header>
+
+
+    <div style="margin: 100px;">
+      <h3 style="color: white; margin-bottom: 10px;">เรื่องย่อ : </h3>
+      <button class="collapsible-season">Open Story</button>
+      <div class="content-season">
+        <p style="margin-top: 30px; margin-bottom: 40px;">
+            <strong> ดาบพิฆาตอสูร | Demon Slayer | Kimetsu no Yaiba</strong> <br>
+            เป็นอนิเมะที่มาจากมังงะของประเทศญี่ปุ่น เขียนเรื่องโดย <strong><a href="writer.html">โคโยฮารุ โกโตเกะ</a></strong><br><br>
+            <strong>การตีพิมพ์</strong><br>
+            วันที่ 15 กุมภาพันธ์ พ.ศ. 2559 :  เริ่มตีพิมพ์เป็นรายตอนในนิตยสารโชเน็งจัมป์รายสัปดาห์ <br>
+            ณ เดือนกุมภาพันธ์ พ.ศ. 2563 :  สำนักพิมพ์ชูเอฉะได้จัดพิมพ์ในรูปแบบหนังสือการ์ตูนรวมเล่ม (ทังโคบง) แล้ว จำนวน 19 เล่ม<br><br>
+            <strong>เรื่องย่อ</strong><br>
+          เรื่องราวเกิดขึ้นในประเทศญี่ปุ่นยุคไทโช คามาโดะ ทันจิโร่ 
+          เป็นเด็กหนุ่มผู้มีจิตใจอ่อนโยนและเฉลียวฉลาด ในฐานะลูกชายคนโตของครอบครัวคนเผาถ่าน 
+          เขาจึงเป็นหัวเรี่ยวหัวแรงในการหารายได้เลี้ยงดูครอบครัวจากการเผาถ่านไปขายหลังจากพ่อของเขาเสียชีวิต 
+          ทุกสิ่งทุกอย่างได้เปลี่ยนแปลงไปเมื่อมีอสูรบุกเข้ามาสังหารคนในครอบครัวของทันจิโร่ 
+          จนหมดสิ้นเหลือแต่เพียงเขาและน้องสาวที่ชื่อเนซึโกะเท่านั้น เนซึโกะที่รอดตายมาได้กลับกลายเป็นได้รับเลือดของอสูรจนกลายเป็นอสูรไป 
+          ทว่าก็น่าประหลาดใจที่เธอยังคงมีความรู้สึกนึกคิดและการแสดงอารมณ์อย่างมนุษย์ยิ่งคงหลงเหลืออยู่ หลังจากที่ทันจิโร่ได้ต่อสู้กับโทมิโอกะ กิยู 
+          นักล่าอสูรที่เดินทางผ่านมาและต้องการจะฆ่าเนซึโกะที่กลายเป็นอสูรไปแล้ว แต่เมื่อกิยูเห็นเนซึโกะปกป้องทันจิโร่ที่เป็นมนุษย์ กิยูได้จึงไว้ชีวิตเนซึโกะ 
+          และเขาจึงทำให้เนซึโกะหมดสติ และเขาจึงให้เนซึโกะคาบกระบอกไม้ไผ่ เอาไว้ในปากของเธอตลอดเวลา เพื่อป้องกันไม่ให้เธอทำร้ายมนุษย์ 
+          ทันจิโร่จึงตัดสินใจที่จะเป็นนักล่าอสูรตามคำชักชวนของกิยู เพื่อหาทางทำให้น้องสาวกลับมาเป็นมนุษย์ และกำจัดอสูรที่ฆ่าครอบครัวของเขาให้จงได้
+
+          <br><br><strong>ขอบคุณข้อมูลจาก : <a href="https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%B2%E0%B8%9A%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B8%B2%E0%B8%95%E0%B8%AD%E0%B8%AA%E0%B8%B9%E0%B8%A3">วิกิพีเดีย</a></strong>
+</p>
+      </div>
+
+      <br>
+
+
+      <h3 style="color: white; margin-bottom: 10px;">รายชื่อตอน : </h3>
+      <div id="season-demon" style="margin-bottom: 100px;"></div><!-- ดึงข้อมูลจาก story.js มาแสดงตอน-->
+
+    </div>
+  </div>
+  <!--
+ <footer class="page-footer content">
+     <h3>Footer</h3>
+ </footer>        
+       <button id="list"></button>  
+-->
+  </div>
+
+
+
+
+  <script src="story.js"></script>
+
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>
